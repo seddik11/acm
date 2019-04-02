@@ -32,10 +32,6 @@ void build(int n,int l,int r)
     build(n*2+1,m+1,r);
     //S[n] = S[n*2] + S[n*2+1];
     //S[n] = min(S[n*2] , S[n*2+1]);
-    if(T[S[n*2]] <= T[S[n*2+1]])
-    S[n] = S[n*2];
-    else
-    S[n] = S[n*2+1];
 }
 
 void update(int n,int l,int r,int idx,int v)
