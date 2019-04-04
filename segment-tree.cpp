@@ -66,10 +66,6 @@ int query(int n,int l,int r,int s,int e)
     int p2 = query(n*2+1,m+1,r,s,e);
     //return (p1 + p2);
     //return min(p1 , p2);
-    if(T[p1] <= T[p2])
-    return p1;
-    else
-    return p2;
 }
 
 int main()
