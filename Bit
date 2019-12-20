@@ -1,0 +1,16 @@
+
+long long bit[100005];
+
+void update(int i,int v)
+{
+    for(; i <= N ; i += i&-i)
+        bit[i] += v;
+}
+
+long long query(int i)
+{
+    long long sum = 0;
+    for(; i ; i -= i&-i)
+        sum += bit[i];
+    return sum;
+}
