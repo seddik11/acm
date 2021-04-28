@@ -14,8 +14,8 @@ using namespace std;
 typedef pair<int,int> pii;
 typedef long long ll;
 
-int S[MAX * 3];
-int T[MAX * 3];
+int S[MAX * 4];
+int T[MAX * 4];
 int N;
 
 void build(int n,int l,int r)
